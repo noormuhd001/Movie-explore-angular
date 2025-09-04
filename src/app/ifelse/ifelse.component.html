@@ -1,0 +1,20 @@
+<h1>{{'If else control Flow'.toUpperCase()}}</h1>
+<button (click)="hide()">Hide</button>
+<button (click)="show()">show</button>
+<button (click)="toggle()">Toggle</button>
+<button (click)="toggle()">{{display?'hide':'show'}}</button>
+@if(display){
+<div style="background-color: rgb(29, 109, 105);width: 200px;height: 200px;margin-left: auto;margin-right: auto;">
+</div>
+}
+
+<button (click)="toggleDiv()">Toggle</button>
+<!-- <button click></button> -->
+
+@if(displayDiv){
+<div style="background-color: rgb(179, 255, 0);width: 200px;height: 200px;margin-left: auto;margin-right: auto;">
+</div>
+}@else {
+<div style="background-color: rgb(5, 150, 247);width: 200px;height: 200px;margin-left: auto;margin-right: auto;">
+</div>
+}

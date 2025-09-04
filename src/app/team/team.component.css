@@ -1,0 +1,14 @@
+
+table{
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 12px;
+  width: 300px;
+}
+/* th, td{
+  border: 1px solid skyblue;
+} */
+h2{
+  margin-left: 10px;
+}

@@ -1,0 +1,47 @@
+<h1>SWITCH CASE</h1>
+
+<button (click)="handleColor('red')">Red</button>
+<button (click)="handleColor('yellow')">Yellow</button>
+<button (click)="handleColor('blue')">Blue</button>
+<input type="text" placeholder="enter color name" (input)="changeColor($event)">
+@switch (color) {
+@case ('red') {
+<h3 style="background-color: red;">Red </h3>
+}
+@case ('yellow') {
+<h3 style="background-color: yellow;">yellow</h3>
+}
+@case ('blue') {
+<h3 style="background-color: blue;">Blue</h3>
+}
+@default {
+<h3 style="background-color: magenta;">No match</h3>
+}
+}
+<!--
+<h2>FOR lOOP FOR SEMI FINALIST</h2>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Goals</th>
+    <th>Position</th>
+  </tr>
+  @for (team of teams; track $index) {
+  <tr>
+    <td>{{ $index + 1 }}</td>
+    <td>{{ team.name }}</td>
+    <td>{{ team.goals }}</td>
+    <td>{{ team.position }}</td>
+  </tr>
+  }
+</table> -->
+
+<h1>For Loop Contexual Variable</h1>
+@for (data of international; track $index) {
+  <h1>{{data}} has been registered to 2026 world cup</h1>
+}
+
+<h1>Two Way Binding</h1>
+<input type="text" placeholder="enter name" (input)="changeName($event)">
+<h1>{{input}}</h1>
