@@ -11,13 +11,13 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieAboutComponent } from './movie-about/movie-about.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: MoviesComponent },
   { path: 'players', component: PlayersComponent },
   { path: 'teams', component: TeamComponent },
   { path: 'about', component: AboutComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'favorites', component: FavouritesComponent },
-  { path: 'movies', component: MoviesComponent },
+  // { path: 'movies', component: MoviesComponent },
   { path: 'mabout', component: MovieAboutComponent },
 ];
 
