@@ -1,5 +1,5 @@
 
-<nav class="navbar">
+<!-- <nav class="navbar">
   <div class="logo"><img src="{{starkImage}}" alt="img"></div>
   <ul class="nav-links" id="navLinks">
     <li>
@@ -16,7 +16,38 @@
     <li><a  routerLinkActive="active" routerLink="about">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-</nav>
+</nav> -->
 
 <!-- Router outlet goes here -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+<div class="bg-dark text-light min-vh-100 d-flex flex-column">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-danger" routerLink="/movies">🎬 Movie Explorer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a routerLink="/movies" class="nav-link">Home</a></li>
+          <li class="nav-item"><a routerLink="/favorites" class="nav-link">Favorites</a></li>
+          <li class="nav-item"><a routerLink="/mabout" class="nav-link">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Routed content will go here -->
+  <main class="flex-grow-1">
+   <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center py-3 border-top border-secondary">
+    <p class="text-muted mb-0">
+      © 2025 Movie Explorer | Built with ❤️ in Angular
+    </p>
+  </footer>
+</div>
+
